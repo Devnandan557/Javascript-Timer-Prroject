@@ -3,7 +3,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('mins');
 const secondsEl = document.getElementById('seconds');
 
-const newYears = "1 Jan 2021";
+const newYears = "11 Jan 2020";
 
 function countdown(){
     const newYearsDate = new Date(newYears);
@@ -23,7 +23,7 @@ function countdown(){
 
     if(totalSeconds<0){
     	clearInterval(countdown);
-        document.getElementById('id1').innerHTML = "HAPPY NEW YEAR 2021";
+        document.getElementById('id1').innerHTML = "EXPIRED" ;
     }
 
 }
